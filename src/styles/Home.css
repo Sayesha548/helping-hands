@@ -1,0 +1,15 @@
+.navbar{
+    background-color:#4B484880;
+   
+}
+.navbar-brand{
+    color: white;
+}
+/* .navbar-brand-d{
+    font-style: Blacksword;
+} */
+
+.block{
+    width: 540px;
+    height: 510px;
+}
