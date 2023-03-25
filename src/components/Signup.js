@@ -2,7 +2,6 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { FaArrowRight, FaRegCheckCircle } from "react-icons/fa"
 import '../styles/Signup.css'
-// import '../styles/Signup.css'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { Link } from 'react-router-dom';
