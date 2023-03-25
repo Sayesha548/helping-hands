@@ -120,31 +120,4 @@
   color: green;
 }
 
-/* login */
-.small-text {
-  color: #FFFFFF99;
-}
 
-.label-g {
-  position: absolute;
-  color: #2699FB;
-  top: 10px;
-  right: 120px;
-  font-size: 14px;
-}
-
-.form-check-label {
-  font-size: 11px;
-  color: #FFFFFF99;
-}
-
-.sign-btn {
-  border: none;
-  background-color: #01BFBDE6;
-  color: #FFFFFF;
-}
-/* .form-check-input{
-  border: #FFFFFF;
-    border-radius: .25em;
-    background-color: #01BFBDE6;
-} */
