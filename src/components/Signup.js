@@ -48,10 +48,10 @@ function Signup() {
         // setState("")
         // setPasscode("")
 
-        // axios.post("http://192.168.3.97:3030/signup/", obj).then((response) => {
-        //     console.log(response.data);
-        //     // setarr(response.data)
-        // })
+        axios.post("http://192.168.3.97:3030/signup/", obj).then((response) => {
+            console.log(response.data);
+            // setarr(response.data)
+        })
 
 
     }
@@ -119,7 +119,7 @@ function Signup() {
 
                             <button type='button' className='form-control btnn'
                                 onClick={singupData}
-                            ><FaArrowRight /></button>
+                            ><FaArrowRight /></button><br/>
                             <Modal className='modal-box text-center' show={show} onHide={handleClose}>
                                 <Modal.Body><FaRegCheckCircle className='fa-design' />
                                     <h4>Registration successful!</h4>

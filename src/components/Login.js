@@ -7,6 +7,10 @@ import Modal from 'react-bootstrap/Modal';
 import { Link } from 'react-router-dom';
 
 function Login() {
+    const [show, setShow] = useState(false)
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     const loginInitialData = {
         username: "",
         password: ""
@@ -18,6 +22,7 @@ function Login() {
     }
 
     const loginData = () => {
+        setShow(true)
         let object = {
             user_name: formData.username,
             password: formData.password
@@ -35,14 +40,14 @@ function Login() {
                     <div className='frm col-4'>
                         <h5 className='text-start mt-5'>Welcome back, Jane</h5>
                         <small className='small-text text-start me-5 pe-5'>Welcome back, please enter your details</small>
-                        <div className="input-group mt-3">
+                        {/* <div className="input-group mt-3">
                             <input type="text" className='form-control'
-                                name="firstName"
+                                // name="firstName"
                                 // value={formData.firstName}
                                 // onChange={inputHandler}
                                 placeholder=''></input>
                             <label className='label-g'>Log in with Google</label>
-                        </div><br />
+                        </div><br /> */}
 
                         {/* <hr className='hr-tg'/><span>or</span><hr className=''/> */}
                         <div className="input-group">
@@ -54,7 +59,7 @@ function Login() {
                             <label className='label'>User name</label>
                         </div><br />
                         <div className='input-group'>
-                            <input type="text" className='form-control'
+                            <input type="password" className='form-control'
                                 name='password'
                                 value={formData.password}
                                 onChange={loginInputHandler}
@@ -79,15 +84,17 @@ function Login() {
                             <button type='button' className='form-control btnn'
                                 onClick={loginData}
                             ><FaArrowRight /></button><br />
-                            {/* <Modal className='modal-box text-center' show={show} onHide={handleClose}>
+                            <Modal className='modal-box text-center' show={show} onHide={handleClose}>
                                 <Modal.Body><FaRegCheckCircle className='fa-design' />
-                                    <h4>Registration successful!</h4>
+                                    <h4>Login successful!</h4>
                                     <p>Thank you. Please click on the link sent to your email
                                         address to activate your account.</p>
-                                    <button type='button' className='cls-btn' onClick={handleClose}
-                                    > Close</button>
-                                </Modal.Body> */}
-                            {/* <Modal.Footer>
+                                    <Link to='/'>
+                                        <button type='button' className='cls-btn' onClick={handleClose}
+                                        > Close</button>
+                                    </Link>
+                                </Modal.Body>
+                                {/* <Modal.Footer>
                                     <Button variant="secondary" onClick={handleClose}>
                                         Close
                                     </Button>
@@ -95,7 +102,7 @@ function Login() {
                                         Save Changes
                                     </Button>
                                 </Modal.Footer> */}
-                            {/* </Modal> */}
+                            </Modal>
                         </div>
                         <div className='text-start'>
                             <small className='small-text'>Don't have an account?</small>
@@ -109,7 +116,6 @@ function Login() {
 
 
             </div>
-
         </div>
     )
 }

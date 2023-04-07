@@ -6,15 +6,18 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import FoodDonation from './components/FoodDonation';
 
 function App() {
   return (
     <div className="App">
+      
       {/* <Home /> */}
       {/* <Footer/> */}
       {/* <Register/> */}
       {/* <Login/> */}
       {/* <Signup/> */}
+      {/* <FoodDonation/> */}
 
 <BrowserRouter>
 
@@ -22,6 +25,7 @@ function App() {
     <Route exact path='/' element={<Home/>}/>
     <Route exact path='/signup' element={<Signup/>}/>
     <Route exact path='/login' element={<Login/>}/>
+    <Route exact path='/fooddonation' element={<FoodDonation/>}/>
   </Routes>
 
 </BrowserRouter>

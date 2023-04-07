@@ -1,15 +1,153 @@
-.navbar{
-    background-color:#4B484880;
-   
+.navbar {
+    /* position: fixed;
+    z-index: 3; */
+    /* background-color:#060000BA; */
+    /* border: 10px; */
+    
+
 }
-.navbar-brand{
-    color: white;
+
+.navbar-brand {
+    /* color: white; */
+    color: darkorange;
 }
+
 /* .navbar-brand-d{
     font-style: Blacksword;
 } */
 
-.block{
+.block {
     width: 540px;
     height: 510px;
+}
+
+.src-image {}
+
+.carousel-item {
+    filter: blur(5px);
+    -webkit-filter: blur(8px);
+    /* position: static;
+    z-index: 2; */
+    background-position: center;
+    background-image: url("../images/main.jpg"), url("../images/people.png"), url("../images/ash.png"), url("../images/child.png"), url("../images/med.png");
+}
+
+pre {
+    position: relative;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {}
+
+h3 {
+    color: #01BFBD;
+}
+
+.counts {
+    border: 1px solid #C5C5C5;
+    background-color: #01BFBD;
+    height: 110px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.pht-border {
+    /* background-color:#FFB163;
+    border:#FFF700;
+    border-top-left-radius: 590px;
+    border-top-right-radius: 466px; */
+}
+
+.btn-donate {
+    width: 148px;
+    height: 50px;
+    background-color: #01BFBD;
+    border-color: #C8F8F7;
+    border-radius: 35px;
+}
+
+.clothe-img {
+    min-width: -webkit-fill-available;
+}
+
+h4 {
+    font-family: 'Segoe UI', Bold;
+    color: #4B4848;
+    font-size: 30px;
+}
+
+.p-letters {
+    color: #4B4848;
+    font-size: 25px;
+    font-family: 'Segoe UI', Regular;
+}
+
+.vlt-img {
+    /* background-color:#FFB163;
+    border:#FFF700;
+    border-top-left-radius: 590px;  */
+}
+
+h2 {
+    display: inline;
+}
+
+.ellipse-img {
+    background-color: #4B4848;
+    border: #707070;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mark {
+    background-color: #4B4848;
+}
+
+.form-clr {
+    background-color: #01BFBD;
+}
+
+.form-data {
+    background-color: #01BFBD;
+}
+
+.clr-btn {
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    color: #4B4848;
+    background-color: #FFFFFF;
+}
+
+.foot {
+    background-color: #707070;
+}
+
+.card-donates {
+    background-color: white;
+    width: 334px;
+    border: 1px solid #C5C5C5;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.donate-mtr {
+    color: #4B4848;
+    font-size: 20px;
+}
+
+.donate-hst {
+    color: #4B4848;
+    font-family: 'Segoe UI', Bold;
+}
+.food-i{
+    width: 331px;
+    border-top-right-radius: 47px;
 }

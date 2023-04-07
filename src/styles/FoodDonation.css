@@ -1,0 +1,34 @@
+/* .img{
+    background-image: url('../images/food.png');
+} */
+/* .fd-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 50%;
+} */
+
+.form-detailss {
+    height: 100vh;
+}
+
+.form-control {
+    /* border-radius: 0; */
+    border: 1px solid #C5C5C5;
+    color: #4B4848;
+}
+
+.form-check-input-details {
+    font-size: 11px;
+    color: #4B4848;
+}
+.donation-form-img{
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; */
+    width: 635px;
+    height: 640px;
+}
+.navbar{
+    border-bottom-right-radius: 70px;
+}
